@@ -1,0 +1,35 @@
+{
+    "APIEndpoints": {
+        "ADFSAuthorize": "https://httpbin.org/adfs/oauth2/authorize",
+        "ADFSGetToken": "https://httpbin.org/adfs/oauth2/token",
+        "GetDSSToken": "http://httpbin.org/STS/oauth/token",
+        "GetDSScode": "https://httpbin.org/STS/oauth/authorize/certificate",
+        "Certs": "http://httpbin.org/SignServer/rest/api/certificates",
+		"User": "https://httpbin.org/STS/ums/user",
+        "Sign": "http://httpbin.org/SignServer/rest/api/documents",
+        "VerifySign": "http://httpbin.org/svs/rest/api/signatures",
+        "RedirectURI": "https://httpbin.org/STS/Authentication/External",
+		"PolicyURI": "http://httpbin.org/SignServer/rest/api/policy",
+		"RequestsURI": "http://httpbin.org/SignServer/rest/api/requests"
+    },
+    "AuthConfig": {
+        "ADFS": {
+			"scope": ["openid", "allatclaims"]
+        },
+		"DSS": {
+            "param1": ""
+        }
+    },
+
+    "SignConfig": {
+        "DocTypes": ["CAdES", "PDF"],
+        "SignParameters": {
+            "CADESType": ["XLT1", "BES"],
+            "TSPAddress": "http://httpbin.org/tsp/tsp.srf"
+        },
+        "PinCode": ""
+    },
+    "TestDoc": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSByZWNpcGU+DQo8cmVjaXBlIG5hbWU9ItGF0LvQtdCxIiBwcmVwdGltZT0iNW1pbiIgY29va3RpbWU9IjE4MG1pbiI+DQogICA8dGl0bGU+DQogICAgICDQn9GA0L7RgdGC0L7QuSDRhdC70LXQsQ0KICAgPC90aXRsZT4NCiAgIDxjb21wb3NpdGlvbj4NCiAgICAgIDxpbmdyZWRpZW50IGFtb3VudD0iMyIgdW5pdD0i0YHRgtCw0LrQsNC9Ij7QnNGD0LrQsDwvaW5ncmVkaWVudD4NCiAgICAgIDxpbmdyZWRpZW50IGFtb3VudD0iMC4yNSIgdW5pdD0i0LPRgNCw0LzQvCI+0JTRgNC+0LbQttC4PC9pbmdyZWRpZW50Pg0KICAgICAgPGluZ3JlZGllbnQgYW1vdW50PSIxLjUiIHVuaXQ9ItGB0YLQsNC60LDQvSI+0KLRkdC/0LvQsNGPINCy0L7QtNCwPC9pbmdyZWRpZW50Pg0KICAgPC9jb21wb3NpdGlvbj4NCiAgIDxpbnN0cnVjdGlvbnM+DQogICAgIDxzdGVwPg0KICAgICAgICDQodC80LXRiNCw0YLRjCDQstGB0LUg0LjQvdCz0YDQtdC00LjQtdC90YLRiyDQuCDRgtGJ0LDRgtC10LvRjNC90L4g0LfQsNC80LXRgdC40YLRjC4gDQogICAgIDwvc3RlcD4NCiAgICAgPHN0ZXA+DQogICAgICAgINCX0LDQutGA0YvRgtGMINGC0LrQsNC90YzRjiDQuCDQvtGB0YLQsNCy0LjRgtGMINC90LAg0L7QtNC40L0g0YfQsNGBINCyINGC0ZHQv9C70L7QvCDQv9C+0LzQtdGJ0LXQvdC40LguIA0KICAgICA8L3N0ZXA+DQogICAgIDwhLS0gDQogICAgICAgIDxzdGVwPg0KICAgICAgICAgICDQn9C+0YfQuNGC0LDRgtGMINCy0YfQtdGA0LDRiNC90Y7RjiDQs9Cw0LfQtdGC0YMuIA0KICAgICAgICA8L3N0ZXA+DQogICAgICAgICAtINGN0YLQviDRgdC+0LzQvdC40YLQtdC70YzQvdGL0Lkg0YjQsNCzLi4uDQogICAgICAtLT4NCiAgICAgPHN0ZXA+DQogICAgICAgINCX0LDQvNC10YHQuNGC0Ywg0LXRidGRINGA0LDQtywg0L/QvtC70L7QttC40YLRjCDQvdCwINC/0YDQvtGC0LjQstC10L3RjCDQuCDQv9C+0YHRgtCw0LLQuNGC0Ywg0LIg0LTRg9GF0L7QstC60YMuDQogICAgIDwvc3RlcD4NCiAgIDwvaW5zdHJ1Y3Rpb25zPg0KPC9yZWNpcGU+",
+    "Operator_cert_path": "C:\\distr\\DSSAPIManager\\Operator_cert\\operator_dss.crt",
+    "Operator_key_path": "C:\\distr\\DSSAPIManager\\Operator_cert\\operator_dss.key"
+}
